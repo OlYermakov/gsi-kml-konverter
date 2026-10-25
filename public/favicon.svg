@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="GSI zu KML">
+  <rect width="512" height="512" rx="112" fill="#10151c"/>
+  <rect x="42" y="42" width="428" height="428" rx="88" fill="#151b22" stroke="#ff6a2a" stroke-width="14"/>
+  <text x="256" y="202" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="800" fill="#f5f7f9">GSI</text>
+  <path d="M138 257h220m-65-53 65 53-65 53" fill="none" stroke="#ff6a2a" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="256" y="397" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="800" fill="#f5f7f9">KML</text>
+</svg>

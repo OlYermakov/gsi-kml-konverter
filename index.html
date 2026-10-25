@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lokaler Konverter von Leica GSI zu KML für Google Earth." />
+    <meta name="theme-color" content="#10151c" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="GSI → KML" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./icon-192.png" sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" sizes="180x180" type="image/png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <title>GSI → KML</title>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="converter-card" aria-labelledby="page-title">
+        <div class="guide" aria-label="Benutzeranleitung">
+          <strong>So funktioniert es</strong>
+          <ol>
+            <li>Schaltfläche drücken und .GSI-Datei auswählen</li>
+            <li>Die fertige .KML-Datei wird automatisch heruntergeladen</li>
+          </ol>
+        </div>
+
+        <div class="copy">
+          <h1 id="page-title">GSI → KML</h1>
+          <p>Schnelle lokale Dateikonvertierung für Google Earth.</p>
+        </div>
+
+        <p class="crs-notice">Koordinatensystem: <strong>DB-REF-GK3</strong></p>
+
+        <input id="file-input" class="file-input" type="file" aria-label="GSI-Datei auswählen" />
+        <button id="convert-button" class="convert-button" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14"></path>
+          </svg>
+          <span>GSI-Datei auswählen</span>
+        </button>
+
+        <div id="status" class="status" aria-live="polite">
+          <p class="privacy"><span aria-hidden="true">●</span>Die Datei wird nur auf Ihrem Gerät verarbeitet</p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
